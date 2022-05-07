@@ -5,10 +5,19 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E9552045-C750-4AFC-B26C-04B5A03F4CB3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F40289F2-383D-47A5-9757-B90E6FB89920}"
+	ProjectSection(SolutionItems) = preProject
+		build\README.md = build\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{0C21A497-25BD-45AF-B689-1EE8105CDF6F}"
+	ProjectSection(SolutionItems) = preProject
+		build\README.md = build\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6AE49CA9-FF3A-4676-9446-7422FD4F6DA9}"
+	ProjectSection(SolutionItems) = preProject
+		build\README.md = build\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CB.SS.Host", "src\CB.SS.Host\CB.SS.Host.csproj", "{69D2E29A-C131-4CFC-B01E-B269F90667D5}"
 EndProject
