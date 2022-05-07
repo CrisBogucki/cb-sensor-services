@@ -1,2 +1,2 @@
 # CB Sensor Services
-Build
+Deploy
