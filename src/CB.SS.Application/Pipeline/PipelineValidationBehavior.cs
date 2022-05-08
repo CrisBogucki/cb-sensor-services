@@ -1,7 +1,7 @@
 using FluentValidation;
 using MediatR;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.Pipeline;
+namespace CB.SensorService.Src.Application.Pipeline;
 
 public class PipelineValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : IRequest<TResponse>

@@ -2,7 +2,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException.Middleware;
+namespace CB.SensorService.Src.Application.GlobalException.Middleware;
 
 public class ValidationExceptionMiddleware
 {
@@ -33,12 +33,12 @@ public class ValidationExceptionMiddleware
     private static async Task HandleExceptionAsync(HttpContext context, IEnumerable<ValidateDetails> validateDetails)
     {
         context.Response.ContentType = "application/json";
-        //context.Response.StatusCode = 998;
+        context.Response.StatusCode = 998;
 
         await context.Response.WriteAsync(
             new ErrorDetails(
                     context.Response.StatusCode,
-                    "Oops something went wrong from env ...",
+                    "Oops something went wrong from valid ...",
                     validateDetails.Select(x => x.Message))
                 .ToString());
     }

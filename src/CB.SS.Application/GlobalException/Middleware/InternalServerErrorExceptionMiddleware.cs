@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException.Middleware;
+namespace CB.SensorService.Src.Application.GlobalException.Middleware;
 
 public class InternalServerErrorExceptionMiddleware
 {
@@ -31,12 +31,12 @@ public class InternalServerErrorExceptionMiddleware
     private static async Task HandleExceptionAsync(HttpContext context)
     {
         context.Response.ContentType = "application/json";
-        //context.Response.StatusCode = 999;
+        context.Response.StatusCode = 999;
 
         await context.Response.WriteAsync(
             new ErrorDetails(
                 context.Response.StatusCode,
-                "Oops something went wrong from env ...",
+                "Oops something went wrong from app ...",
                 new List<string>()).ToString());
     }
 }

@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException;
+namespace CB.SensorService.Src.Application.GlobalException;
 
 public class ValidateDetails
 {

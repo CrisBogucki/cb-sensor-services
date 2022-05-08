@@ -1,11 +1,11 @@
-using Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException;
-using Auge.Api.SmartBuildingEnergyManagement.Src.Application.Pipeline;
+using CB.SensorService.Src.Application.GlobalException;
+using CB.SensorService.Src.Application.Pipeline;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application;
+namespace CB.SensorService.Src.Application;
 
 public class Context
 {

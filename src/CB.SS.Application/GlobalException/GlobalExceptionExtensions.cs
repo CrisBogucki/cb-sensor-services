@@ -1,7 +1,7 @@
-using Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException.Middleware;
+using CB.SensorService.Src.Application.GlobalException.Middleware;
 using Microsoft.AspNetCore.Builder;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException;
+namespace CB.SensorService.Src.Application.GlobalException;
 
 public static class ExceptionExtensions
 {

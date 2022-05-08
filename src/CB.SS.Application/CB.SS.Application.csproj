@@ -2,8 +2,25 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>CB.SensorService.Src.Application</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Configurations>Local;Uat;Demo;Prod</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Local' ">
+      <Optimize Condition=" '$(Optimize)' == '' ">true</Optimize>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CB.SS.Domain\CB.SS.Domain.csproj" />
+    </ItemGroup>
 
 </Project>

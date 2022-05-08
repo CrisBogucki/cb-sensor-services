@@ -1,4 +1,4 @@
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Domain.Exception;
+namespace CB.SensorService.Src.Domain.Exception;
 
 public class EnvironmentException : System.Exception
 {

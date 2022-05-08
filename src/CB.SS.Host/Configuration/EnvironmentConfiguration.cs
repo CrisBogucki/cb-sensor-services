@@ -1,4 +1,4 @@
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Host.Configuration;
+namespace CB.SS.Host.Configuration;
 
 public static class EnvironmentConfiguration
 {

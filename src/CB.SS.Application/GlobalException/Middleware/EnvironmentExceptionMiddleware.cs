@@ -1,8 +1,8 @@
-using Auge.Api.SmartBuildingEnergyManagement.Src.Domain.Exception;
+using CB.SensorService.Src.Domain.Exception;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Application.GlobalException.Middleware;
+namespace CB.SensorService.Src.Application.GlobalException.Middleware;
 
 public class EnvironmentExceptionMiddleware
 {
@@ -31,7 +31,7 @@ public class EnvironmentExceptionMiddleware
     private static async Task HandleExceptionAsync(HttpContext context)
     {
         context.Response.ContentType = "application/json";
-        //context.Response.StatusCode = 997;
+        context.Response.StatusCode = 997;
 
         await context.Response.WriteAsync(
             new ErrorDetails(

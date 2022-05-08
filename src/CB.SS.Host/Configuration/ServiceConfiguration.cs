@@ -1,9 +1,9 @@
-using Auge.Api.SmartBuildingEnergyManagement.Src.Domain.Utils;
+using CB.SensorService.Src.Domain.Utils;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Host.Configuration;
+namespace CB.SensorService.Src.Host.Configuration;
 
 public static class ServiceConfiguration
 {
@@ -21,12 +21,7 @@ public static class ServiceConfiguration
             options.AddPolicy("CorsPolicy",
                 builder => builder
                     .WithOrigins(
-                        "https://smartbuildingenergymanagement.aug-e.io/api/*",
-                        "https://smartbuildingenergymanagement.aug-e.io/api/",
-                        "https://smartbuildingenergymanagement.aug-e.io/api",
-                        "https://smartbuildingenergymanagement.aug-e.io/*",
-                        "https://smartbuildingenergymanagement.aug-e.io/",
-                        "https://smartbuildingenergymanagement.aug-e.io",
+                        "https://app-name.domain.com/api/*",
                         "https://localhost:4200",
                         "http://localhost:4200",
                         "http://localhost:63342",
@@ -49,9 +44,9 @@ public static class ServiceConfiguration
         {
             options.SwaggerDoc("v1", new OpenApiInfo
             {
-                Title = "AUG-E Smart Building Energy Management API",
+                Title = "CB Sensor Services API",
                 Version = "v1",
-                Description = "Interface for Smart Building Energy Management product"
+                Description = "Interface for sensors"
             });
         });
     }

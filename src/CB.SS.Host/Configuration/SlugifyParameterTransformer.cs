@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Host.Configuration;
+namespace CB.SensorService.Src.Host.Configuration;
 
 public class SlugifyParameterTransformer : IOutboundParameterTransformer
 {

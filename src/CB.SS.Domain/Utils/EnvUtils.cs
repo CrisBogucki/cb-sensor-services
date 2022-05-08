@@ -1,6 +1,6 @@
-using Auge.Api.SmartBuildingEnergyManagement.Src.Domain.Exception;
+using CB.SensorService.Src.Domain.Exception;
 
-namespace Auge.Api.SmartBuildingEnergyManagement.Src.Domain.Utils;
+namespace CB.SensorService.Src.Domain.Utils;
 
 public static class EnvUtils
 {

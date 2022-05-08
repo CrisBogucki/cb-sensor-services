@@ -1,5 +1,4 @@
-﻿using Auge.Api.SmartBuildingEnergyManagement.Src.Presentation.DTO;
-using CB.SensorService.Src.Domain.Models.Event.Command;
+﻿using CB.SensorService.Src.Domain.Models.Event.Command;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,16 +9,14 @@ public class InputSignalController : Controller
 {
     private readonly IMediator _mediator;
 
-    public SensorController(IMediator mediator)
+    public InputSignalController(IMediator mediator)
     {
         _mediator = mediator;
     }
 
-    [HttpPost("input-signal")]
-    public async Task<List<GraphItemDto>> GetItem(InputSignalCommand query, CancellationToken cancellationToken)
+    [HttpPost]
+    public async Task Add(InputSignalCommand query, CancellationToken cancellationToken)
     {
-        var models = await _mediator
-            .Send(query, cancellationToken);
-        
+        await _mediator.Send(query, cancellationToken);
     }
 }
